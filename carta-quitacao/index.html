@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/Icj6SUxGhS56.css">
+
+    <title>Carta de Quitação</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo" style="margin: auto;">
+            <svg width="120" height="30" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 10H150C155.523 10 160 14.4772 160 20V30C160 35.5228 155.523 40 150 40H30C24.4772 40 20 35.5228 20 30V20C20 14.4772 24.4772 10 30 10Z" fill="#C71585"></path>
+
+                <text x="90" y="30" font-family="Arial" font-size="16" fill="white" text-anchor="middle">SERASA</text>
+            </svg>
+        </div>
+
+        <h1>Carta de Quitação</h1>
+
+        <p>Na qualidade de Serasa, com base na prestação de serviços realizados ao Sr./Sra. <span id="name" class=""></span>, portador(a) do CPF <span id="cpf" class=""></span>, informamos que:</p>
+
+        <ul>
+            <li>O serviço será realizado com base no programa do Feirão Limpa Nome, onde o(a) mesmo(a) obteve um desconto de <span class="">98,7%</span> na quitação de todos os débitos em aberto.</li>
+        </ul>
+
+        <h2>Detalhes da dívida</h2>
+
+        <ul>
+            <li>Acordo: Gerido e processado pela Serasa.</li>
+
+            <li>Valor total: R$ <span id="value" class=""></span>.</li>
+
+            <li>Forma de pagamento: PIX.</li>
+
+            <li>Acordo valido somente hoje: <span id="paymentDate" class="date-badge"></span></li>
+        </ul>
+
+        <p>Agora, depois que a Serasa Experian recebeu o pagamento devido, em conformidade com o acima referenciado de forma de pagamento, declaro aqui a quitação completa e absoluta da dívida.</p>
+
+        <div class="signature">
+            <p>Renata Paiva de Almeida<br>Encarregada de Negociações<br>Serasa Experian</p>
+        </div>
+
+        <p class="copyright">© 2025 Serasa Experian. Todos os direitos reservados.</p>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const today = new Date();
+
+        const day = String(today.getDate()).padStart(2, '0');
+
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+
+        const year = today.getFullYear();
+
+        document.getElementById('name').textContent = params.get('name');
+
+        document.getElementById('cpf').textContent = params.get('cpf');
+
+        document.getElementById('value').textContent = params.get('value');
+
+        document.getElementById('paymentDate').textContent = `${day}/${month}/${year}`;
+    </script>
+</body>
+
+</html>
